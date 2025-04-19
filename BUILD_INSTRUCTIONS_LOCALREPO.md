@@ -44,3 +44,19 @@ The instructions are intended for developers or system administrators who want t
    ```
 1. The NuGet package will be created in the same directory as the `.nuspec` file, with a filename in the format `VSSetup.PowerShell.<version>.nupkg`.
 1. Copy the NuGet package to your local PowerShell repository.
+
+## References ##
+
+* Versioning:
+  * Versioning made easier with Nerdbank.GitVersioning https://ml-software.ch/posts/versioning-made-easier-with-nerdbank-gitversioning
+  * Nerdbank.GitVersioning - version.schema.json - https://github.com/dotnet/Nerdbank.GitVersioning/blob/bba85d9dd308edcdb1608cfea0f10512d1986c1a/src/NerdBank.GitVersioning/version.schema.json
+  * Nerdbank.GitVersioning - Getting Started - https://dotnet.github.io/Nerdbank.GitVersioning/docs/getting-started.html
+* Building:
+  * MSBuild command-line reference - https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-command-line-reference
+  * Common MSBuild project properties - https://learn.microsoft.com/en-us/visualstudio/msbuild/common-msbuild-project-properties
+* NuGet packaging:
+  * Quickstart: Create and publish a NuGet package using Visual Studio (Windows only) - https://learn.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package-using-visual-studio
+  * Install NuGet client tools - https://learn.microsoft.com/en-us/nuget/install-nuget-client-tools
+  * Create a package using the nuget.exe CLI - https://learn.microsoft.com/en-us/nuget/create-packages/creating-a-package
+  * Working with Private PowerShellGet Repositories - https://learn.microsoft.com/en-us/powershell/gallery/how-to/working-with-local-psrepositories
+  * PSResourceGet supported repositories - https://learn.microsoft.com/en-us/powershell/gallery/powershellget/supported-repositories
