@@ -5,7 +5,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Microsoft.VisualStudio.Setup</RootNamespace>
     <AssemblyName>Microsoft.VisualStudio.Setup.PowerShell</AssemblyName>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyTitle>Visual Studio Setup PowerShell Module</AssemblyTitle>
@@ -13,6 +13,18 @@
     <Company>Microsoft Corporation</Company>
     <Product>Visual Studio Setup</Product>
     <Copyright>Copyright (C) Microsoft Corporation. All rights reserved.</Copyright>
+    <Title>Visual Studio Setup PowerShell Module</Title>
+    <RepositoryUrl>https://github.com/JonasNjopOlsson/vssetup.powershell</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/JonasNjopOlsson/vssetup.powershell</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageTags>PSModule;PSIncludes_Cmdlet;PSCmdlet_Get-VSSetupInstance;PSCmdlet_Select-VSSetupInstance;PSCommand_Get-VSSetupInstance;PSCommand_Select-VSSetupInstance</PackageTags>
+    <PackageId>VSSetup</PackageId>
+    <Authors>Microsoft</Authors>
+    <Version></Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReleaseNotes>https://github.com/JonasNjopOlsson/vssetup.powershell/releases/tag/$Tag$</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -43,14 +55,38 @@
       <Visible>false</Visible>
     </AdditionalFiles>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudioEng.MicroBuild.Core" version="1.0.0" />
-    <PackageReference Include="Microsoft.PowerShell.2.ReferenceAssemblies" version="1.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Setup.Configuration.Interop" version="1.11.2290" />
-    <PackageReference Include="Nerdbank.GitVersioning" version="2.3.186" />
-    <PackageReference Include="StyleCop.Analyzers" version="1.1.118" />
-    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" />
+    <PackageReference Include="Microsoft.VisualStudioEng.MicroBuild.Core" version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.PowerShell.2.ReferenceAssemblies" version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Setup.Configuration.Interop" version="3.13.2069">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Nerdbank.GitVersioning" version="3.7.115">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers" version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <Import Project="..\..\build\Transform.targets" />

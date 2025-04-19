@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>VSSetup</id>
+    <version>2.2.46</version>
+    <title>Visual Studio Setup PowerShell Module</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <iconUrl>https://go.microsoft.com/fwlink/?linkid=839265</iconUrl>
+    <projectUrl>https://github.com/JonasNjopOlsson/vssetup.powershell</projectUrl>
+    <description>PowerShell module to interact with Visual Studio Setup</description>
+    <summary>Visual Studio Setup PowerShell Module</summary>
+    <releaseNotes>https://github.com/JonasNjopOlsson/vssetup.powershell/releases/tag/2.2.46</releaseNotes>
+    <copyright>Copyright (C) Microsoft Corporation. All rights reserved.</copyright>
+    <tags>PSModule PSIncludes_Cmdlet PSCmdlet_Get-VSSetupInstance PSCmdlet_Select-VSSetupInstance PSCommand_Get-VSSetupInstance PSCommand_Select-VSSetupInstance</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\net48\*.dll" />
+    <file src="bin\Release\net48\*.xml" />
+    <file src="bin\Release\net48\*.pdb" />
+    <file src="bin\Release\net48\about_*.help.txt" />
+    <file src="bin\Release\net48\VSSetup.*" />
+    <file src="..\..\LICENSE.txt" />
+    <file src="..\..\README.md" />
+    <file src="..\..\docs\VSSetup\*.md" />
+  </files>
+</package>

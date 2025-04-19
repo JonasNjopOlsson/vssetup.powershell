@@ -12,19 +12,25 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Castle.Core" version="3.3.3" />
+    <PackageReference Include="Castle.Core" version="5.2.1" />
     <PackageReference Include="Microsoft.PowerShell.2.ReferenceAssemblies" version="1.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Setup.Configuration.Interop" version="1.11.2290" />
-    <PackageReference Include="Moq" version="4.5.30" />
-    <PackageReference Include="Nerdbank.GitVersioning" version="2.3.186" />
+    <PackageReference Include="Microsoft.VisualStudio.Setup.Configuration.Interop" version="3.13.2069" />
+    <PackageReference Include="Moq" version="4.20.72" />
+    <PackageReference Include="Nerdbank.GitVersioning" version="3.7.115">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="StyleCop.Analyzers" version="1.1.118" />
-    <PackageReference Include="xunit" version="2.1.0" />
-    <PackageReference Include="xunit.abstractions" version="2.0.0" />
-    <PackageReference Include="xunit.assert" version="2.1.0" />
-    <PackageReference Include="xunit.core" version="2.1.0" />
-    <PackageReference Include="xunit.extensibility.core" version="2.1.0" />
-    <PackageReference Include="xunit.extensibility.execution" version="2.1.0" />
-    <PackageReference Include="xunit.runner.visualstudio" version="2.3.1" />
+    <PackageReference Include="xunit" version="2.9.3" />
+    <PackageReference Include="xunit.abstractions" version="2.0.3" />
+    <PackageReference Include="xunit.assert" version="2.9.3" />
+    <PackageReference Include="xunit.core" version="2.9.3" />
+    <PackageReference Include="xunit.extensibility.core" version="2.9.3" />
+    <PackageReference Include="xunit.extensibility.execution" version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" version="3.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\VSSetup.PowerShell\VSSetup.PowerShell.csproj">
